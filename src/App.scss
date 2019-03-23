@@ -1,0 +1,23 @@
+@import "./styles/variables.scss";
+@import "./styles/mixins.scss";
+@import "./styles/button.scss";
+@import "./styles/components/title.scss";
+@import "./styles/components/weather.scss";
+@import "./styles/components/form.scss";
+
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-weight: 160;
+}
+
+*:focus {
+  outline: none;
+}
+
+.error-message {
+  color: #d8000c;
+  background-color: #ffbaba;
+  text-align: center;
+}

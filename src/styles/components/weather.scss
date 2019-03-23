@@ -1,0 +1,30 @@
+.detail-wrapper {
+  margin-top: 3rem;
+  @include base-flex();
+
+  .temperature {
+    font-size: 4rem;
+    font-weight: 180;
+    margin-bottom: 1rem;
+  }
+
+  .temp-high-and-low {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+    .left-column {
+      margin-right: 1.6rem;
+    }
+  }
+}
+
+.detail-wrapper:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 4rem;
+  border-bottom: 1px solid $color-grey;
+}

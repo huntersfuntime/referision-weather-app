@@ -1,0 +1,10 @@
+.title-wrapper {
+  @include base-flex();
+  width: 100vw;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+
+  .state-name {
+    font-size: 2.9rem;
+  }
+}

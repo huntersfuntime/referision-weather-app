@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import SVG from "./svg";
 
 const Form = props => {
   return (
@@ -13,7 +14,11 @@ const Form = props => {
           className="zip-code"
         />
       </label>
-      <button className="btn">Update</button>
+
+      <button>
+        {" "}
+        <SVG />
+      </button>
     </form>
   );
 };

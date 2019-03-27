@@ -56,28 +56,30 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Titles
-            name={this.state.name}
-            description={this.state.description}
-            icon={this.state.icon}
-          />
-          {this.state.error ? (
-            <h2 className="error-message">{this.state.error}</h2>
-          ) : (
-            ""
-          )}
-          <Weather
-            temp={this.state.temp}
-            minTemperature={this.state.minTemperature}
-            maxTemperature={this.state.maxTemperature}
-          />
+        <div className="app-wrapper">
+          <div className="weather-wrapper">
+            <Titles
+              name={this.state.name}
+              description={this.state.description}
+              icon={this.state.icon}
+            />
+            {this.state.error ? (
+              <h2 className="error-message">{this.state.error}</h2>
+            ) : (
+              ""
+            )}
+            <Weather
+              temp={this.state.temp}
+              minTemperature={this.state.minTemperature}
+              maxTemperature={this.state.maxTemperature}
+            />
+          </div>
           {this.state.loading ? (
             <p>Loading...</p>
           ) : (
             <Form getWeather={this.getWeather} />
           )}
-        </header>
+        </div>
       </div>
     );
   }

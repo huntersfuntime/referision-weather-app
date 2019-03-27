@@ -1,16 +1,23 @@
 .form-wrapper {
   @include base-flex();
   flex-direction: row;
-  margin-top: 4.5rem;
+  padding-top: 109px;
+  height: 60px;
 
   label {
-    font-weight: 90;
+    font-size: 15px;
+    color: #494949;
+    letter-spacing: 0.3px;
+    text-align: left;
   }
   .zip-code {
     display: flex;
-    font-size: 1rem;
-    width: 6rem;
-    height: 2rem;
+    color: #494949;
+    width: 108px;
+    height: 33px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 16px;
   }
 
   button {

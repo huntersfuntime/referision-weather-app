@@ -1,10 +1,20 @@
 .title-wrapper {
-  @include base-flex();
-  width: 100vw;
-  margin-top: 3rem;
-  font-size: 1.4rem;
+  height: 72px;
+  .weather-state {
+    font-size: 39.3px;
+    color: #414a4a;
+    text-align: center;
+  }
 
-  .state-name {
-    font-size: 2.9rem;
+  .weather-icon {
+    transform: translate(9px, 9px);
+  }
+
+  .weather-description {
+    font-size: 19px;
+    color: #4a4a4a;
+    text-align: center;
+    padding-top: 14px;
+    text-transform: capitalize;
   }
 }

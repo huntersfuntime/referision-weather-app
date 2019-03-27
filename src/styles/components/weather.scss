@@ -1,30 +1,39 @@
+.weather-wrapper {
+  height: 250px;
+  margin: 0 auto;
+}
+
+.weather-wrapper:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 55px;
+  border-bottom: 1px solid #979797;
+}
+
 .detail-wrapper {
-  margin-top: 3rem;
+  margin-top: 61px;
   @include base-flex();
 
   .temperature {
-    font-size: 4rem;
-    font-weight: 180;
-    margin-bottom: 1rem;
+    font-size: 55.1px;
+    color: #4a4a4a;
+    text-align: center;
+    font-weight: 600;
   }
 
   .temp-high-and-low {
+    padding-top: 31px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 22.68px;
+    color: #4a4a4a;
+    text-align: center;
 
     .left-column {
       margin-right: 1.6rem;
     }
   }
-}
-
-.detail-wrapper:after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 75%;
-  padding-top: 4rem;
-  border-bottom: 1px solid $color-grey;
 }

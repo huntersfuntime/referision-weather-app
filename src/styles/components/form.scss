@@ -4,11 +4,12 @@
   padding-top: 109px;
   height: 60px;
 
-  label {
+  .zip-label {
     font-size: 15px;
     color: #494949;
     letter-spacing: 0.3px;
     text-align: left;
+    margin-bottom: 6px;
   }
   .zip-code {
     display: flex;
@@ -21,6 +22,6 @@
   }
 
   button {
-    transform: translateY(0.6rem);
+    transform: translateY(0.9rem);
   }
 }

@@ -5,15 +5,17 @@ import SVG from "./svg";
 const Form = props => {
   return (
     <form onSubmit={props.getWeather} className="form-wrapper">
-      <label>
-        Zip Code:
+      <div>
+        <div className="zip-label">
+          <label>Zip Code:</label>
+        </div>
         <input
           type="text"
           name="zipcode"
           placeholder="zipcode.."
           className="zip-code"
         />
-      </label>
+      </div>
 
       <button>
         {" "}
